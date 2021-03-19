@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
 import retrofit.Utils.MyObserver;
-import retrofit.Utils.MyObserverList;
 import retrofit.bean.Bean;
 import retrofit.bean.Demo;
 import retrofit2.Call;
@@ -104,17 +103,17 @@ public class MainActivity extends RxActivity implements View.OnClickListener {
 
         /////////////////new
 
-        RequestUtils.getDemoList(this, new MyObserverList<List<Demo>>(this) {
-            @Override
-            public void onSuccess(List<List<Demo>> result) {
-
-            }
-
-            @Override
-            public void onFailure(Throwable e, String errorMsg) {
-
-            }
-        });
+//        RequestUtils.getDemoList(this, new MyObserverList<List<Demo>>(this) {
+//            @Override
+//            public void onSuccess(List<List<Demo>> result) {
+//
+//            }
+//
+//            @Override
+//            public void onFailure(Throwable e, String errorMsg) {
+//
+//            }
+//        });
     }
 
     private void getData() {
